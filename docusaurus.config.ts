@@ -22,14 +22,14 @@ const config: Config = {
   },
   themes: ['@docusaurus/theme-mermaid'],
 
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
+  url: 'https://Nthabiseng-Daisy13.github.io',
+  baseUrl: '/Language-Learning/',
 
-  organizationName: 'your-team',
-  projectName: 'project-docs',
-
+  organizationName: 'Nthabiseng-Daisy13',
+  projectName: 'Language-Learning',
+  deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
-
+  trailingSlash: false,
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
