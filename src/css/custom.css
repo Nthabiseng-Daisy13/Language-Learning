@@ -1,0 +1,52 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #5b4dd6;
+  --ifm-color-primary-dark: #4335d1;
+  --ifm-color-primary-darker: #3a2cc7;
+  --ifm-color-primary-darkest: #2f24a3;
+  --ifm-color-primary-light: #7367de;
+  --ifm-color-primary-lighter: #8074e2;
+  --ifm-color-primary-lightest: #a89fec;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #9c8cff;
+  --ifm-color-primary-dark: #8272ff;
+  --ifm-color-primary-darker: #7565ff;
+  --ifm-color-primary-darkest: #4d3bff;
+  --ifm-color-primary-light: #b6a6ff;
+  --ifm-color-primary-lighter: #c3b4ff;
+  --ifm-color-primary-lightest: #e6ddff;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.15);
+}
+
+/* Nicer, rounded tables */
+table {
+  display: table;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th {
+  background-color: var(--ifm-color-primary);
+  color: white;
+}
+
+/* Softer card corners for the homepage row/col grid */
+.row .col {
+  padding: 1rem;
+}
+
+.row .col h3 {
+  margin-top: 0;
+}
