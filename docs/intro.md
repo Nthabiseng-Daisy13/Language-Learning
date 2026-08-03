@@ -31,6 +31,13 @@ Branching strategy, naming conventions, commit rules, Pull Request workflow, cod
 What CI/CD means for us, the automated pipeline stages, testing policy, coverage targets, and branch protection rules.
 
   </div>
+
+   <div className="col col--6">
+
+###  [Project Plan](/project-plan)
+Our project plan
+
+  </div>
 </div>
 
 ## The golden rule

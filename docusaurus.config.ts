@@ -80,6 +80,8 @@ const config: Config = {
           items: [
             {label: 'Git Methodology', to: '/git-methodology'},
             {label: 'CI/CD Strategy', to: '/cicd-strategy'},
+            {label: 'Project Plan', to: '/project-plan'},
+
           ],
         },
       ],
