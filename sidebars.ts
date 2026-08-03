@@ -6,6 +6,7 @@ const sidebars: SidebarsConfig = {
     'git-methodology',
     'cicd-strategy',
     'project-plan',
+    'api',
   ],
 };
 
