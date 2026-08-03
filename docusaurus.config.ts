@@ -27,7 +27,6 @@ const config: Config = {
 
   organizationName: 'Nthabiseng-Daisy13',
   projectName: 'Language-Learning',
-  deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
   trailingSlash: false,
   i18n: {
