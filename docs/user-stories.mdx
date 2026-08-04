@@ -1,0 +1,175 @@
+---
+id: user-stories
+title: User Stories & Sprint Plan
+sidebar_label: User Stories & Sprints
+description: Product backlog converted to user stories and organized into 4 sprints for a 6-person team.
+---
+
+This document turns the product backlog into user stories, verified against the project brief, and organizes them into 4 sprints. Stories carry an ID so they can be tracked on a board and referenced in PRs (e.g. `feat: implement WRITE-3`).
+
+:::info Coverage check
+Every requirement in the brief (Basic, Intermediate, Advanced) is represented below. Three backlog items describing assessments from different angles (Writing a Course, Interacting with a Course, Assessments) are consolidated into one set of stories rather than duplicated. The same applies to reputation and self-governance, which appear under both Profile/Moderation and Community & Reputation in the original backlog.
+:::
+
+---
+
+## Epics and user stories
+
+### PROFILE — user identity and trust
+
+| ID | Story | Tier |
+|---|---|---|
+| PROF-1 | As a user, I want a profile showing which languages I speak, so that others know my expertise | Basic |
+| PROF-2 | As a user, I want my profile to show which languages I'm learning, so that content can be tailored to me | Basic |
+| PROF-3 | As a user, I want a visible reputation score, so that I can see my standing in the community | Intermediate |
+| PROF-4 | As a contributor, I want my reputation to increase from accepted contributions, so that good work is recognized | Intermediate |
+| PROF-5 | As the platform, I want reputation to gate which actions a user is trusted to perform, so that moderation isn't open to anyone | Intermediate |
+| PROF-6 | As the platform, I want rate/action limits that adapt to a user's reputation, so that new or low-trust accounts can't cause outsized damage | Advanced |
+
+### DISCOVERY — finding content
+
+| ID | Story | Tier |
+|---|---|---|
+| DISC-1 | As a learner, I want to find published courses, so that I can start learning | Basic |
+| DISC-2 | As a learner, I want courses ranked by quality/relevance, so that good content surfaces first | Intermediate |
+| DISC-3 | As a learner, I want a feed of content, so that I can discover new courses without searching | Intermediate |
+| DISC-4 | As a learner, I want courses tagged and filterable by difficulty/level, so that I can find content that matches my level | Intermediate |
+| DISC-5 | As a learner, I want content recommended in the language I'm learning, so that recommendations are relevant | Intermediate |
+| DISC-6 | As a user, I want notifications for pending proposals, reviews, and moderation outcomes, so that I never miss something waiting on me | Intermediate |
+| DISC-7 | As a learner, I want recommendations informed by how I've actually performed, so that suggestions reflect my real level | Advanced |
+| DISC-8 | As the platform, I want stale content to resurface for review, so that outdated courses don't silently persist | Advanced |
+| DISC-9 | As a user, I want search to stay fast as the catalogue grows, so that the platform remains usable at scale | Advanced |
+| DISC-10 | As the platform, I want unused content archived out of active search, so that the catalogue stays navigable | Advanced |
+
+### READ — interacting with a course as a learner
+
+| ID | Story | Tier |
+|---|---|---|
+| READ-1 | As a learner, I want to read a published course, so that I can learn from it | Basic |
+| READ-2 | As a learner, I want my progress through a course tracked, so that I can pick up where I left off | Basic |
+| READ-3 | As a learner, I want to take assessments attached to a course, so that I can test my understanding | Intermediate |
+| READ-4 | As a learner, I want automatic marking where the question type supports it, so that I get immediate feedback | Intermediate |
+| READ-5 | As a learner, I want my assessment results stored against the course, so that I can track my performance over time | Intermediate |
+| READ-6 | As a learner, I want to view records of conversation sessions I missed, so that I don't lose out on spoken practice | Advanced |
+
+### WRITE — authoring a course
+
+| ID | Story | Tier |
+|---|---|---|
+| WRITE-1 | As an author, I want to create a course, so that I can share what I know | Basic |
+| WRITE-2 | As an author, I want to build a course out of lessons, so that content is structured for learners | Basic |
+| WRITE-3 | As an author, I want to publish a course when it's ready, so that learners can find it | Basic |
+| WRITE-4 | As an author, I want to unpublish a course, so that I can take down content that's no longer ready or accurate | Basic |
+| WRITE-5 | As an author, I want a dedicated workspace for writing a course, so that authoring is separate from reading | Basic |
+| WRITE-6 | As an author, I want to attach assessments to my course, so that learners can be examined on the material | Intermediate |
+| WRITE-7 | As an author, I want to build assessments from a set of supported question types, so that I'm not limited to one format | Intermediate |
+| WRITE-8 | As an author, I want my assessments peer-reviewed, so that quality isn't trusted on my word alone | Advanced |
+
+### COLLAB — course collaboration
+
+| ID | Story | Tier |
+|---|---|---|
+| COLLAB-1 | As a learner, I want to suggest a correction to a lesson, so that mistakes can be fixed by whoever finds them | Basic |
+| COLLAB-2 | As an author, I want to review suggested corrections, so that I control what changes to my course | Basic |
+| COLLAB-3 | As an author, I want to accept a suggested correction, so that good fixes get merged in | Basic |
+| COLLAB-4 | As a contributor, I want to be credited when my correction is accepted, so that my contribution is recognized | Basic |
+| COLLAB-5 | As a user, I want to fork an existing course, so that I can take it in a different direction | Intermediate |
+| COLLAB-6 | As a fork owner, I want to modify my fork independently, so that I'm not blocked by the original author | Intermediate |
+| COLLAB-7 | As a fork owner, I want to submit my changes back to the original course, so that improvements can flow upstream | Intermediate |
+| COLLAB-8 | As an original author, I want to review incoming proposals from forks, so that I control what merges into my course | Intermediate |
+| COLLAB-9 | As a fork owner, I want to pull changes made to the original course into my fork, so that my fork can stay current | Advanced |
+| COLLAB-10 | As a fork owner, I want to resolve conflicts between upstream changes and my own edits, so that merging doesn't silently lose work | Advanced |
+| COLLAB-11 | As a user, I want to trace where a lesson originated across every fork it's been copied into, so that provenance is visible | Advanced |
+
+### MOD — moderation
+
+| ID | Story | Tier |
+|---|---|---|
+| MOD-1 | As a user, I want to flag content, so that I can report something worse than a simple mistake | Basic |
+| MOD-2 | As a user, I want to provide a reason with my flag, so that moderators have context | Basic |
+| MOD-3 | As the platform, I want flagged content routed to moderators, so that it doesn't rely on the author to self-police | Basic |
+| MOD-4 | As a moderator, I want a queue of flags to triage, so that reports are handled systematically | Intermediate |
+| MOD-5 | As a moderator, I want decisions to require more than one moderator's agreement, so that no single person unilaterally controls outcomes | Intermediate |
+| MOD-6 | As a moderator, I want actions to carry a duration rather than being permanent by default, so that penalties are proportionate | Intermediate |
+| MOD-7 | As a user actioned against, I want to appeal a moderation outcome, so that mistakes can be corrected | Intermediate |
+| MOD-8 | As a community, I want to elect our own moderators, so that moderation authority comes from the people it affects | Advanced |
+| MOD-9 | As a community, I want to set our own moderation policy within platform limits, so that norms fit our language community | Advanced |
+| MOD-10 | As a user, I want moderation actions published, so that moderation is transparent rather than opaque | Advanced |
+| MOD-11 | As the platform, I want to detect signals that one person controls multiple accounts, so that sockpuppeting doesn't undermine trust systems | Advanced |
+| MOD-12 | As the platform, I want to detect coordinated manipulation (brigading), so that groups can't game votes or moderation outcomes | Advanced |
+
+### CONVO — conversation spaces
+
+| ID | Story | Tier |
+|---|---|---|
+| CONVO-1 | As a learner, I want language-specific conversation rooms, so that I can practice speaking with others | Advanced |
+| CONVO-2 | As a learner, I want to schedule conversation sessions ahead of time, so that people reliably meet | Advanced |
+| CONVO-3 | As a participant, I want speaking turns managed, so that a busy room stays usable | Advanced |
+| CONVO-4 | As a participant, I want a record left of the session, so that people who missed it can catch up | Advanced |
+
+---
+
+## Sprint plan
+
+With a 6-person team, sprints map to the brief's own tiers — this keeps each sprint end demoable rather than leaving half-finished cross-tier features at every checkpoint.
+
+| Sprint | Focus | Epics covered | Primary owners |
+|---|---|---|---|
+| **Sprint 1** | Foundation + Basic tier | PROF-1, PROF-2 · DISC-1 · READ-1, READ-2 · WRITE-1–5 · COLLAB-1–4 · MOD-1–3 | Whole team on foundation (Week 1), then split by module ownership |
+| **Sprint 2** | Intermediate tier, part 1 | READ-3–5 · WRITE-6–7 · COLLAB-5–8 · PROF-3–5 | Assessments + forking owners, reputation owner |
+| **Sprint 3** | Intermediate tier, part 2 | MOD-4–7 · DISC-2–6 | Moderation owner, discovery/notifications owner |
+| **Sprint 4** | Advanced tier (selected) + hardening | Chosen subset of: COLLAB-9–11 · MOD-8–12 · CONVO-1–4 · DISC-7–10 · WRITE-8 · PROF-6 | Whole team, converging |
+
+### Sprint 1 detail
+
+- [ ] PROF-1, PROF-2 — profile with languages spoken/learning
+- [ ] DISC-1 — find published courses
+- [ ] READ-1, READ-2 — reader + progress tracking
+- [ ] WRITE-1–5 — course/lesson CRUD, publish/unpublish, workspace
+- [ ] COLLAB-1–4 — suggest, review, accept, credit
+- [ ] MOD-1–3 — flag, reason, route to moderator
+
+:::tip Exit criteria
+End of Sprint 1 should be a fully working, deployed, demoable Basic tier — this is the checkpoint from the development blueprint (end of Week 3 in the 6-week plan). If any of the above isn't done, cut Sprint 2 scope rather than let it slip silently.
+:::
+
+### Sprint 2 detail
+
+- [ ] READ-3–5 — take assessments, auto-marking, results storage
+- [ ] WRITE-6–7 — attach and build assessments from question types
+- [ ] COLLAB-5–8 — fork, modify independently, propose back, review proposals
+- [ ] PROF-3–5 — visible reputation, reputation growth, reputation-gated trust
+
+### Sprint 3 detail
+
+- [ ] MOD-4–7 — moderation queue, multi-moderator decisions, time-bound actions, appeals
+- [ ] DISC-2–6 — ranking, feeds, tags/level filtering, language-relevant recommendations, notifications
+
+:::tip Exit criteria
+End of Sprint 3 = full Intermediate tier working. This is the point to honestly assess how much Advanced-tier scope is realistic for Sprint 4 — better to cut now than discover it in the final week.
+:::
+
+### Sprint 4 detail — pick, don't attempt everything
+
+Advanced tier is intentionally the largest epic list and the brief itself calls the abuse-resistance work (MOD-11, MOD-12) "the hardest part of the platform." With one sprint left, select 2–4 stories per area that demo well rather than attempting full coverage of all of them:
+
+**Realistic to fully build:**
+- [ ] CONVO-1–4 — conversation spaces (start the WebSocket spike in Sprint 1 or 2 to de-risk this, per the development blueprint)
+- [ ] MOD-10 — published moderation actions (straightforward, high demo value)
+- [ ] PROF-6 — trust-scaled rate limits
+- [ ] COLLAB-9 — pulling upstream changes into a fork (simplified case)
+
+**Design-documented, simplified, or partial:**
+- [ ] COLLAB-10, COLLAB-11 — conflict resolution and lineage tracing (document the general algorithm, implement the trivial case)
+- [ ] MOD-11, MOD-12 — sockpuppet/brigading detection (heuristic-based, not ML — document what a production version would need)
+- [ ] MOD-8, MOD-9 — elected moderators, community policy (feasible if time allows; cut first if not)
+- [ ] DISC-7–10 — performance-informed recommendations, stale-content resurfacing, fast search, archiving (fine on a small demo dataset; document how each would scale)
+- [ ] WRITE-8 — assessment peer review
+
+:::warning Common mistake
+Don't let Sprint 4 become "build everything at 60%." A better outcome for grading and for the demo is a smaller set of Advanced features working completely, with the rest clearly documented as designed-but-not-implemented — exactly as the brief's own "hardest part" framing anticipates.
+:::
+
+---
+
+*Story IDs are stable — reference them in branch names, PR titles, and commit messages (e.g. `feature/collab-5-fork-course`) so work is traceable back to this document.*

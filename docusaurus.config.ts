@@ -82,6 +82,8 @@ const config: Config = {
             {label: 'CI/CD Strategy', to: '/cicd-strategy'},
             {label: 'Project Plan', to: '/project-plan'},
             {label: 'API', to: '/api'},
+            {label: 'User Stories', to: '/user-stories'},
+
 
               
           ],

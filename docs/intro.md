@@ -34,8 +34,15 @@ What CI/CD means for us, the automated pipeline stages, testing policy, coverage
 
    <div className="col col--6">
 
-###  [Project Plan](/project-plan)
-Our project plan
+      ###  [Project Plan](/project-plan)
+      Our project plan
+
+  </div>
+
+  <div className="col col--6">
+
+      ###  [User Stories](/user-stories)
+      User Stories
 
   </div>
 </div>

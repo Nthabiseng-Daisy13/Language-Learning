@@ -7,6 +7,7 @@ const sidebars: SidebarsConfig = {
     'cicd-strategy',
     'project-plan',
     'api',
+    'user-stories',
   ],
 };
 
